@@ -1,0 +1,202 @@
+/*reset básica*/
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+/*video de fundo*/
+#bg-video{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -2;
+}
+/*CAMADA ESCURA DO VÍDEO*/
+.overlay{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.342);
+z-index: -1;
+}
+/*container principal*/
+.container{
+width: 100%;
+height: 100vh;
+padding: 30px 80px;
+
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.logo img{
+width: 90px;
+
+}
+
+nav{
+display: flex;
+gap: 40px;
+
+}
+
+nav a{
+text-decoration: none;
+color: white;
+font-weight: bolder;
+
+}
+
+nav a:hover{
+text-decoration: underline;
+color: red;
+transition: 0.2s;
+}
+
+.redes{
+display: flex;
+gap: 20px;
+font-size: 30px;
+
+}
+
+.redes i{
+
+    cursor: pointer;
+}
+
+.redes i:hover{
+color: red;
+
+transition: 0.4s;
+}
+
+/*area principal*/
+main{
+height: 85vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.texto{
+width: 45%;
+
+
+}
+
+.texto h1{
+font-size: 60px;
+margin-bottom: 10px;
+color: white;
+}
+
+.texto h2{
+font-size: 30px;
+color: white;
+margin-bottom: 20px;
+}
+.texto p{
+font-size: 20px;
+margin-bottom: 30px;
+color: white;
+line-height: 40px;
+}
+
+.botoes{
+    display: flex;
+    gap: 20px;
+}
+
+button{
+padding: 15px 35px; 
+border: none;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.btn-vermelho{
+
+    background-color: red;
+    color: white;
+    border-radius: 0px 20px;
+}
+
+.btn-transparente{
+color: white;
+background-color: rgba(0, 0, 0, 0.26);
+border: 2px solid rgba(255, 0, 0, 0.616);
+border-radius: 20px 0px;
+
+}
+
+.btn-vermelho:hover{
+background-color: rgb(145, 0, 0);
+font-size: 20.7px;
+}
+
+.btn-transparente:hover{
+font-size: 20.7px;
+background-color: rgba(66, 43, 43, 0.815);
+border: 2px solid red;
+
+}
+
+img{
+width: 300px;
+}
+
+.modelos{
+height: 100vh;
+background-color: rgb(65, 65, 65);
+padding: 80px;
+}
+
+.cards{
+display: flex;
+gap: 30px;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.card{
+
+    background-color: rgb(136, 136, 136);
+width: 250px;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.25;)
+}
+
+.card:hover{
+
+transform: translateY(-10px);
+transition: 0.5s;
+
+}
+
+#verao{
+height: 450px;
+
+}
+
+
+
+
+
+
